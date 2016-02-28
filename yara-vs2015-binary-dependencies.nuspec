@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>yara-vs2015-binary-dependencies</id>
+    <version>0.0.1</version>
+    <authors>kallanreed@outlook.com</authors>
+    <owners>kallanreed@outlook.com</owners>
+    <licenseUrl>https://yara-vs2015-binary-dependencies/LICENSE</licenseUrl>
+    <projectUrl>https://yara-vs2015-binary-dependencies</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Binary dependencies needed to build yara with VS2015. This package provides jansson and openSSL (libeay) compiled for Visual Studio 2015.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>native yara vs2015 jansson openssl libeay</tags>
+  </metadata>
+  <files>
+    <file src="include\*" target="lib\native\include\" />
+    <file src="include\openssl\*" target="lib\native\include\openssl\" />
+    <file src="lib\*" target="lib\native\lib\" />
+    <file src="build\yara-vs2015-binary-dependencies.targets" target="build\native\" />
+  </files>
+</package>
